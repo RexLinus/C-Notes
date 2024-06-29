@@ -18,6 +18,11 @@
     %s => Strings / Texts
 */
 
+/*
+    If you don't want others (or yourself) to change existing variable values, you can use the const keyword
+    const keyword produces error when you try to reassign it to a new value
+*/
+
 int main()
 {
     // declaring variables
@@ -25,10 +30,16 @@ int main()
     float myFloatNum = 5.99; // Floating point number
     char myLetter = 'D';     // Character
 
+    // constants
+    const int minutesPerHour = 60;
+    const float PI = 3.14;
+
     // displaying
-    printf("%d\n", myNum);      // Integer formatting
-    printf("%f\n", myFloatNum); // Float format
-    printf("%c\n", myLetter);   // Character formatting
+    printf("%d\n", myNum);          // Integer formatting
+    printf("%f\n", myFloatNum);     // Float format
+    printf("%c\n", myLetter);       // Character formatting
+    printf("%i\n", minutesPerHour); // Integer formatting - displaying constant
+    printf("%.2f\n", PI);           // Float formatting - displaying
 
     // return statement
     return 0;
